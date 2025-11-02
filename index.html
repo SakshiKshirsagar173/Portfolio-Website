@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Science & Analysis Portfolio — Your Name</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="Portfolio of a data science and data analysis professional. Projects, skills and contact." />
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">Your Name</a>
+        <nav class="nav" id="nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+          <button id="themeToggle" class="btn small" title="Toggle theme">🌙</button>
+          <button id="navToggle" class="btn small nav-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <h1>Hi, I'm Your Name</h1>
+        <p class="lead">Data Scientist & Data Analyst — I turn data into insight and action.</p>
+        <p class="cta-row">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Hire me</a>
+        </p>
+      </section>
+
+      <section id="about" class="container about">
+        <h2>About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I build models, dashboards and analyses that help teams make data-driven decisions. My work includes exploratory data analysis, feature engineering, model building, and productionizing results with clear visualizations and reports.</p>
+            <ul>
+              <li>Domain: analytics, experimentation, forecasting</li>
+              <li>Tools: Python, pandas, scikit-learn, SQL, Tableau, Power BI</li>
+              <li>Communication: reports, presentations, reproducible notebooks</li>
+            </ul>
+          </div>
+          <div class="about-stats">
+            <div class="stat"><strong>5+</strong><span>Years experience</span></div>
+            <div class="stat"><strong>20+</strong><span>Projects</span></div>
+            <div class="stat"><strong>10k+</strong><span>Rows analyzed (sample)</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="container skills">
+        <h2>Skills</h2>
+        <div class="skill-list">
+          <div class="skill">Python</div>
+          <div class="skill">pandas</div>
+          <div class="skill">scikit-learn</div>
+          <div class="skill">SQL</div>
+          <div class="skill">Tableau / Power BI</div>
+          <div class="skill">Data Cleaning</div>
+        </div>
+      </section>
+
+      <section id="projects" class="container projects">
+        <h2>Projects</h2>
+        <div class="project-controls">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="analysis">Analysis</button>
+          <button class="filter" data-filter="ml">Machine Learning</button>
+          <button class="filter" data-filter="viz">Visualization</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card" data-category="analysis">
+            <h3>Sales Cohort Analysis</h3>
+            <p>Exploratory analysis and cohort retention study that identified churn drivers and recommended retention test ideas.</p>
+            <p class="small"><a href="#">View details</a> • <a href="#">Repo</a></p>
+          </article>
+
+          <article class="project-card" data-category="ml">
+            <h3>Customer Churn Model</h3>
+            <p>Binary classification model with feature engineering and calibration; imbalanced handling and interpretable reports for stakeholders.</p>
+            <p class="small"><a href="#">View details</a> • <a href="#">Repo</a></p>
+          </article>
+
+          <article class="project-card" data-category="viz">
+            <h3>Interactive Dashboard</h3>
+            <p>Custom interactive dashboard built for executive reporting; filters, drill-downs and KPI monitoring.</p>
+            <p class="small"><a href="#">Live</a> • <a href="#">Repo</a></p>
+          </article>
+
+          <!-- Add more project cards here -->
+        </div>
+      </section>
+
+      <section id="contact" class="container contact">
+        <h2>Contact</h2>
+        <p>If you'd like to discuss a project, collaboration or role, get in touch.</p>
+        <form id="contactForm" class="contact-form">
+          <label>
+            Name
+            <input name="name" required />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">Send</button>
+            <a class="btn ghost" href="#">Download resume</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> Your Name — Data Science & Analysis</div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
