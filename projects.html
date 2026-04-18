@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects | Sakshi Kshirsagar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">SK</span>
+        <span class="brand-text">Sakshi Kshirsagar</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills</a>
+        
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h1 class="page-title">Projects</h1>
+        <p class="lead">
+          A selection of end-to-end ML projects showcasing work across NLP, RAG, and fraud detection. [file:1]
+        </p>
+      </section>
+
+      <section class="card">
+        <article class="project">
+          <header class="project-header">
+            <div>
+              <h2>Content Virality Predictor</h2>
+              <p class="project-meta">Python • Scikit-Learn • NLP • YouTube API • Render</p>
+            </div>
+            <span class="project-badge">Deployed</span>
+          </header>
+          <ul class="project-list">
+            <li>Built an end-to-end ML system to predict early-stage content virality from YouTube metadata.</li>
+            <li>Improved F1-score by 17% through targeted NLP feature engineering. [file:1]</li>
+            <li>Deployed the model on Render with real-time inference via a web interface.</li>
+            <li>Implemented a clean inference pipeline: preprocessing → prediction → output insights. [file:1]</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <header class="project-header">
+            <div>
+              <h2>AI Chat Agent for Company Knowledge Base</h2>
+              <p class="project-meta">Python • NLP • Embeddings • RAG • OpenAI API</p>
+            </div>
+            <span class="project-badge">RAG</span>
+          </header>
+          <ul class="project-list">
+            <li>Designed a retrieval-augmented chatbot over 500+ pages of internal documents. [file:1]</li>
+            <li>Built an embedding-based semantic search pipeline, improving answer relevance by 30% vs keyword search.</li>
+            <li>Reduced dependency on manual support by enabling self-service information retrieval. [file:1]</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <header class="project-header">
+            <div>
+              <h2>Credit Card Fraud Detection</h2>
+              <p class="project-meta">Python • Logistic Regression • SMOTE • Classification</p>
+            </div>
+            <span class="project-badge">Imbalanced Data</span>
+          </header>
+          <ul class="project-list">
+            <li>Built a fraud detection pipeline handling extreme class imbalance using SMOTE. [file:1]</li>
+            <li>Optimized models for high recall to minimize business-critical false negatives.</li>
+            <li>Evaluated using Precision, Recall, and F1-score for deployment reliability. [file:1]</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a href="index.html">&larr; Back to Home</a>
+    </footer>
+  </div>
+</body>
+</html>
